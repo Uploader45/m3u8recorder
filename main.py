@@ -20,7 +20,7 @@ Bot = Client(
 
 
 START_TEXT = """<b><i>Hello</i></b> {}
-<b><i>This is a Bot Created for Website Works of TN.</i></b>
+<b><i>Bye Bye.....</i></b>
 
 > `{}`
 
