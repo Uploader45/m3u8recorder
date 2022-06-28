@@ -41,8 +41,8 @@ CHANNELS_TEXT = """<b>Here are the List of Channels : </b>
 
 SITE_BUTTON = [
     InlineKeyboardButton(
-        text='WEBSITE',
-        url='https://toon-nation.blogspot.com'
+        text='TELEGRAM',
+        url='https://t.me/TeluguCartoonIndia'
     )
 ]
 
