@@ -91,7 +91,7 @@ def multi_rip(client, message, streamUrl, channel, recordingDuration, language, 
     ind_time = datetime.now(timezone("Asia/Kolkata")).strftime('%d-%m-%Y [%H-%M-%S]')
     video_opts = 'ffmpeg -reconnect 1 -reconnect_at_eof 1 -reconnect_streamed 1 -i'
     video_opts_2 = '-to'
-    video_opts_3 = '-map 0:v:0 -map 0:a -metadata:s:a:0 title=[TeamTCI ~ (AAC 2.0 96Kbps) ] -metadata:s:a:1 title=[TeamTCI ~ (AAC 2.0 96Kbps) ] -metadata:s:a:2 title=[TeamTCI ~ (AAC 2.0 96Kbps) ] -metadata:s:a:3 title=[TeamTCI ~ (AAC 2.0 96Kbps) ] -metadata:s:a:4 title=[TeamTCI ~ (AAC 2.0 96Kbps) ] -metadata:s:a:5 title=[TeamTCI ~ (AAC 2.0 96Kbps) ] -metadata:s:a:6 title=[TeamTCI ~ (AAC 2.0 96Kbps) ] -metadata:s:a:7 title=[TeamTCI ~ (AAC 2.0 96Kbps) ] -metadata:s:a:8 title=[TeamTCI ~ (AAC 2.0 96Kbps) ]'
+    video_opts_3 = '-map 0:v:0 -map 0:a  -metadata:s:a:0 title="[TeamTCI ~ (AAC 2.0 96Kbps) ]" -metadata:s:a:1 title="[TeamTCI ~ (AAC 2.0 96Kbps) ]" -metadata:s:a:2 title="[TeamTCI ~ (AAC 2.0 96Kbps) ]" -metadata:s:a:3 title="[TeamTCI ~ (AAC 2.0 96Kbps) ] " -metadata:s:a:4 title="[TeamTCI ~ (AAC 2.0 96Kbps) ]" -metadata:s:a:5 title="[TeamTCI ~ (AAC 2.0 96Kbps) ]" -metadata:s:a:6 title="[TeamTCI ~ (AAC 2.0 96Kbps) ]"'
     filename = f'{fileTitle} - {ind_time} [{ripQuality}] [x264] {ripType} [{language}]_TeamTCI.mkv'
     cmd = video_opts.split() + [streamUrl] + video_opts_2.split() + [recordingDuration] + video_opts_3.split() + [filename]
     # process = Popen(cmd, stdout=PIPE, stderr=PIPE)
