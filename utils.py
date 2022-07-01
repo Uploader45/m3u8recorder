@@ -11,8 +11,8 @@ import subprocess
 
 
 class config:
-    AUTH_USERS = [5521710836 , 1745747446 , -1001581293470]
-    ADMIN_USERS = [5521710836 , 1745747446 , -1001581293470]
+    AUTH_USERS = [5521710836 , 1745747446 , 2128197222]
+    ADMIN_USERS = [5521710836 , 1745747446 , 2128197222]
     LINK_JSON = "https://gist.githubusercontent.com/Captainsteve1/21fb755cd48557486f4d79166f72c8fe/raw/b88b6aa2e9cc09ba135be73429390f66bf5ff24a/Steve.json"
 
 
@@ -92,7 +92,7 @@ def multi_rip(client, message, streamUrl, channel, recordingDuration, language, 
     video_opts = 'ffmpeg -reconnect 1 -reconnect_at_eof 1 -reconnect_streamed 1 -i'
     video_opts_2 = '-to'
     video_opts_3 = '-map 0:v:0 -map 0:a'
-    filename = f'{fileTitle} - {ind_time} [{ripQuality}] [x264] {ripType} [{language}]_TeamTCI.mkv'
+    filename = [Telugucartoonindia] f'{fileTitle} - {ind_time} [{ripQuality}] [x264] {ripType} [{language}]_TeamTCI.mkv'
     cmd = video_opts.split() + [streamUrl] + video_opts_2.split() + [recordingDuration] + video_opts_3.split() + [filename]
     # process = Popen(cmd, stdout=PIPE, stderr=PIPE)
     # stdout, stderr = process.communicate()
