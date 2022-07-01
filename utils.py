@@ -11,8 +11,8 @@ import subprocess
 
 
 class config:
-    AUTH_USERS = [5521710836 , 1745747446 , 5521710836]
-    ADMIN_USERS = [5521710836 , 1745747446 , 5521710836]
+    AUTH_USERS = [5521710836 , 1745747446 , -1001581293470]
+    ADMIN_USERS = [5521710836 , 1745747446 , -1001581293470]
     LINK_JSON = "https://gist.githubusercontent.com/Captainsteve1/21fb755cd48557486f4d79166f72c8fe/raw/b88b6aa2e9cc09ba135be73429390f66bf5ff24a/Steve.json"
 
 
