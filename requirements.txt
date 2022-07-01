@@ -3,3 +3,4 @@ tgcrypto
 requests
 hachoir
 pytz
+ffmpeg-python
