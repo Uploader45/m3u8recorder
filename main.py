@@ -13,8 +13,8 @@ import time
 
 Bot = Client(
     "Simple-IPTV-m3u-to-Video-Bot",
-    bot_token = "5431085411:AAEg-tf2DgVzN2BLeIQdrhj7d0XJ8SX-DDA",
-    api_id = " 12308142",
+    bot_token = "5446916707:AAEPigJB-J_egVbw40NnuQLHcCUPF551g4Y",
+    api_id = "12308142",
     api_hash = "36790e45bd4af2df54ba0e5adf91db96"
 )
 
